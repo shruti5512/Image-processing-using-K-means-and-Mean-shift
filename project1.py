@@ -47,12 +47,7 @@ def segment_image(image, use_meanshift=False, include_position=False):
     return segmented
 
 # Load and process images
-image_paths = [
-    'C:/Users/pshru/OneDrive - University of Massachusetts/Desktop/project_ip/0073MR0003970000103657E01_DRCL.tif',
-    'C:/Users/pshru/OneDrive - University of Massachusetts/Desktop/project_ip/0174ML0009370000105185E01_DRCL.tif',
-    'C:/Users/pshru/OneDrive - University of Massachusetts/Desktop/project_ip/0617ML0026350000301836E01_DRCL.tif',
-    'C:/Users/pshru/OneDrive - University of Massachusetts/Desktop/project_ip/1059ML0046560000306154E01_DRCL.tif'
-]
+image_paths = [' ' ] # insert path to all the four images seperated with commas
 for image_path in image_paths:
     # Load and preprocess image
     image = cv2.imread(image_path)
